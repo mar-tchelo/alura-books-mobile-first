@@ -1,0 +1,34 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/animation.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/footer.css");
+
+
+:root{
+    --cor-de-fundo:#EBECEE;
+    --branco: #FFFFFF;
+    --preto:#000;
+    --laranja:#EB9B00;
+    --azul:#002F52;
+    --cinza-claro: #858585;
+    --cinza-escuro:#474646;
+
+
+    --box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --azul-degrade:linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    
+    
+    --font-principal:'Poppins', sans-serif;
+    --font-secundaria:'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+

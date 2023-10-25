@@ -1,0 +1,25 @@
+.container__botao{
+    display: none;
+}
+
+#coracao{
+    display: none;
+   
+}
+
+#coracao:checked + label .container__imagem path {
+    animation: preencher;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes preencher {
+    0% {
+        fill: #002F52; /* Cor inicial do preenchimento */
+    }
+    100% {
+        fill: rgba(22, 91, 155, 0.918); /* Cor final do preenchimento, altere conforme necessário */
+    }
+
+
+}

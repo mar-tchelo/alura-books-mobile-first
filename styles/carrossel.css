@@ -1,0 +1,167 @@
+.carrossel__titulo{
+    padding: 1em 0 0.5em 0;
+    background-color: var(--branco);
+    
+    color: var(--laranja);
+    font-family: var(--font-principal);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-align: center;
+
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0;
+}
+
+/* 1º Card */
+
+.card{
+    border-radius: 10px;
+    background: var(--branco);
+    box-shadow: var(--box-shadow); 
+    margin: 1em;
+    padding: 1em;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:0.5em;
+}
+
+.descricao__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+    font-family: var(--font-principal);
+    line-height: normal;
+}
+
+.descricao__titulo-livro{
+color: var(--azul);
+font-size: 18px;
+font-weight: 700;
+margin: 0.5em 0;
+line-height: normal;
+
+}
+
+.descricao__texto{
+font-size: 14px;
+line-height: normal;
+}
+
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botoes{
+    display: flex;
+}
+
+.botoes__item{
+    margin: 0 .5em
+}
+
+.botoes__ancora{
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1em 2.2em;
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+}
+
+.botoes__ancora:hover{
+    box-shadow: var(--box-shadow); 
+    
+}
+
+/* Card escritora */
+.estrelinhas{
+    width: 91px;
+    height: 30px;
+   
+}
+
+
+@media screen and (min-width: 1024px){
+    .carrossel__titulo{
+        font-size: 26px;
+    }
+
+
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+    display:block;
+    top: 60%;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
+
+}
+
+@media screen and (min-width:1700px){
+    .carrossel__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2vw 3em 20vw;
+        /* vw lagura da tela */
+    }
+
+    .carrossel__titulo{
+        font-size: 32px;
+        padding-top: 2em;
+    }
+
+    .card{
+        margin-top: 5em;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .descricao__titulo{
+        font-size: 32px;
+    }
+
+    .descricao__titulo-livro{
+        font-size: 18px;
+    }
+    .descricao__texto{
+        font-size: 16px;
+        width: 91%;
+    }
+}
